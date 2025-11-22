@@ -521,3 +521,14 @@ the Styling for rolling text at experience section
 .rotating-text p .word .letter.behind {
   transform: rotateX(-90deg);
 }
+
+/* Education rotating text styling */
+<div class="details-container">
+  <img
+    src="./assets/education.png"
+    alt="Education icon"
+    class="icon"
+  />
+
+
+ 

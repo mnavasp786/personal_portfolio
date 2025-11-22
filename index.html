@@ -1,17 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Muhammed Navas</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Muhammed Navas</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Muhammed Navas</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Muhammed Navas profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Muhammed Navas</h1>
+      <p> and i'm a</p>
+      <p class="section__text__p2"><!--Document Controller--></p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/navas1/" target="_blank">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" /></a>
+        <a href="https://github.com/mnavasp786" target="_blank">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" /></a>
+        <a href="https://www.youtube.com/@mixopedia" target="_blank">
+          <img src="./assets/youtube.png" alt="My Youtube channel" class="icon" /></a>
+        <a href="https://wa.me/971585151023?text=Hello%2C%20I%27d%20like%20to%20chat%20with%20you." target="_blank">
+          <img src="./assets/whatsapp.png" alt="Contact-me" class="icon" /></a>
+        <a href='tel:+971585151023' target="_blank">
+          <img src="./assets/phone.png" alt="Contact-me" class="icon" /></a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>10+ years</p>
+            <!--Animating previous experiences new script comes here-->
+            <div class="rotating-text">
+
+              <p>
+                <span class="word w-1">Document_Control</span>
+                <span class="word w-2">Administration</span>
+                <span class="word w-3">IT_Support</span>
+              </p>
+            </div>
+
+
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education & Certification</h3>
+
+
+            <div class="education-list">
+              <p>Oracle Aconex</p>
+              <p>Google IT Support Professional</p>
+              <p>Cisco CCNA</p>
+              <p>Microsoft Power BI Data Visualization</p>
+              <p>Graphic Designing</p>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="text-container">
+          <p>
+            I am a Senior Document Controller and Administrative Professional with over 10 years of experience managing project documentation, office operations, and administrative workflows for Civil, MEP, Infrastructure, and HSE projects, including 5 years in the UAE.
+
+I specialize in Oracle Aconex and EDMS platforms, handling submissions, approvals, revision control, metadata management, and project handovers, ensuring all documents are accurate, traceable, and compliant.
+
+I also streamline processes with MS Office, Power BI, SharePoint, and PDF tools, develop SOPs and trackers, and train teams to work efficiently. I enjoy using technology to keep projects organized, on track, and running smoothly.
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <!-- <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SASS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- Technical Skills -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Technical Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/oracle-aconex.png" alt="Oracle Aconex" class="icon tool-icon" />
+            </article>
+            <article>
+              <img src="./assets/ms-office.png" alt="MS Office" class="icon tool-icon" />
+            </article>
+            <article>
+              <img src="./assets/excel.png" alt="Microsoft Excel" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/powerpoint.png" alt="Microsoft PowerPoint" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/outlook.png" alt="Microsoft outlook Mail & Calender" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/teams.png" alt="Microsoft Teams Meetings" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/power-bi.png" alt="Microsoft Power BI" class="icon tool-icon" />
+            </article>
+            <article>
+              <img src="./assets/photosho.png" alt="Adobe Photoshop" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/dome-connect.png" alt="DOME Connect" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/sharepoint.png" alt="SharePoint & Teams" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/adobe.png" alt="Adobe Acrobat" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/revit.png" alt="Revit" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/autocad.png" alt="Autodesk AutoCAD" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/windows.png" alt="Microsoft Windows PC" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/linux.png" alt="linux" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/ubuntu.png" alt="ubuntu" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/html.png" alt="ubuntu" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/css.svg" alt="ubuntu" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/javascript.png" alt="ubuntu" class="icon" />
+            </article>
+            <article>
+              <img src="./assets/python.png" alt="ubuntu" class="icon" />
+            </article>
+          </div>
+        </div>
+
+
+        <!-- Professional / Document Control Skills -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Professional Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Transmittals & Workflows</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>QA/QC & Contract Compliance</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Revision & Version Control</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Metadata & Coding Standards</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Document Numbering & Filing Systems</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Correspondence & Letters</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Procurement & Technical Documentation</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Consultant / PMC Coordination</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Handover & Project Close-Out</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Training & Onboarding</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>SOPs & Templates</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Tracking & Reporting</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Inspection Requests, NCRs, SORs Management</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Database Management / DBMS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Windows & Linux</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Typing Speed: 50+ WPM</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/cw1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">CityWalk Central Park</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
+              Linkedin
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Hire Me
+            </button>
+
+          </div>
+          <h2></h2> -
+          <div class="btn-container">
+
+            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
+              WhatsApp Me
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
+              Call Me
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Expo City Dubai</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
+              Linkedin
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Hire Me
+            </button>
+
+          </div>
+          <h2></h2> -
+          <div class="btn-container">
+
+            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
+              WhatsApp Me
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
+              Call Me
+            </button>
+          </div>
+
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">District One West - Villas & Infrastructure</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
+              Linkedin
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Hire Me
+            </button>
+
+          </div>
+          <h2></h2> -
+          <div class="btn-container">
+
+            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
+              WhatsApp Me
+            </button>
+            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
+              Call Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mnavasp786@outlook.com">mnavasp786@outlook.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mnavas313@gmail.com">mnavas313@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/navas1/">linkedin.com/in/navas1</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/whatsapp.png " alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://wa.me/971585151023">WhatsApp</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png " alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href='tel:+971585151023'>+971585151023</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Companies i worked with -->
+   <!-- Companies I’ve Worked With -->
+<section class="companies-section" style="padding:40px 0; text-align:center; background-color:#f9f9f9;">
+  <h2 style="margin-bottom:30px; font-size:1.8rem;">Companies I’ve Worked With</h2>
+  <div class="companies-container" style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:30px;">
+    <div class="company-logo">
+      <img src="./assets/dhre.png" alt="Meydan" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/expo.png" alt="Meydan" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/omniyat.png" alt="Meydan" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/meydan.png" alt="Meydan" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/deyaar.png" alt="Meydan" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/aecom.png" alt="AECOM" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/hill.png" alt="Hill International" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/ae7.png" alt="AE7" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/jacobs.png" alt="Jacobs" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/mace.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/revolution.png" alt="Aecom" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/gardinia.jpg" alt="Aecom" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/whitespace.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/hill.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/zutari.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/jouzy.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/nakheel.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/unilabs.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/dm.webp" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/dewan.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/arifbin.gif" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/pt.gif" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/pt.gif" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/egos.png" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/edcg.jpg" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/bsbg.jpg" alt="Mace" style="height:60px;">
+    </div>
+    <div class="company-logo">
+      <img src="./assets/dgj.jpg" alt="Mace" style="height:60px;">
+    </div>
+    <!-- Add more logos as needed -->
+  </div>
+</section>
+  <!-- End of Companies i worked with -->
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -20,389 +619,10 @@
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Muhammed Navas</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Muhammed Navas profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Muhammed Navas</h1>
-        <p> and i'm a</p>
-        <p class="section__text__p2"><!--Document Controller--></p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/navas1/" target="_blank">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-          /></a>
-          <a href="https://github.com/mnavasp786" target="_blank">
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-          /></a>
-          <a href="https://www.youtube.com/@mixopedia" target="_blank">
-          <img
-            src="./assets/youtube.png"
-            alt="My Youtube channel"
-            class="icon"
-          /></a>
-          <a href="https://wa.me/971585151023?text=Hello%2C%20I%27d%20like%20to%20chat%20with%20you." target="_blank">
-          <img
-            src="./assets/whatsapp.png"
-            alt="Contact-me"
-            class="icon"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>8+ years</p>
-              <!--Animating previous experiences new script comes here-->
-              <div class="rotating-text">
+    <p>Copyright &#169; 2023 Muhammed Navas. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
 
-                <p>
-                  <span class="word w-1">Document Controller</span>
-                  <span class="word w-2">Administrative Assistant</span>
-                  <span class="word w-3">IT Support</span>
-                  
-                </p>
-              </div>
-              
+</body>
 
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education & Certification</h3>
-              <p>Higher Secondary Education<br />Google IT Support Professional Certificate<br /></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:mnavasp786@outlook.com">mnavasp786@outlook.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/navas1/">linkedin.com/in/navas1</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Muhammed Navas. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    
-  </body>
 </html>

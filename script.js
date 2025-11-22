@@ -8,7 +8,22 @@ function toggleMenu() {
 
 // text_animator.js
 document.addEventListener('DOMContentLoaded', function () {
-  const designations = ["Document Controller", "Administrator", "Web Developer", "Youtuber", "Designer"];
+  const designations = [
+    "Senior Document Controller",
+    "Project Document Controller",
+    "Oracle Aconex Specialist",
+    "Document Control Lead",
+    "Technical Documentation Specialist",
+    "Project Administration",
+    "EDMS / DMS Coordinator",
+    "Operations & Data Control Executive",
+    "Web Developer",
+    "Project Coordinator",
+    "Construction Project Secretary",
+    "Graphic Designer",
+    "Data Analyst & Visualizer",
+    "IT Support Sepecialist",
+  ];
   const designationElement = document.querySelector('.section__text__p2');
   const marginTop = window.getComputedStyle(designationElement).marginTop;
   const newMarginBottom = '40px'; // Adjust the bottom margin value as needed
@@ -91,4 +106,7 @@ let rotateText = () => {
 };
 
 rotateText();
-setInterval(rotateText, 4000);
+setInterval(rotateText, 3000);
+
+
+
