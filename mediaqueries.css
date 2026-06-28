@@ -1,14 +1,34 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    min-height: 83vh;
     margin-bottom: 6rem;
+    padding: 3rem 5rem;
   }
   .about-containers {
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #experience-history,
+  #education,
+  #cta,
+  #bim-viewer {
     height: fit-content;
+  }
+  section {
+    margin: 2rem 5rem;
+  }
+  .companies-section {
+    margin: 2rem 5rem;
+  }
+  #cta {
+    padding: 3rem 5rem;
+  }
+  .hero-content {
+    gap: 3rem;
+  }
+  .stats-container {
+    gap: 2rem;
   }
 }
 
@@ -49,12 +69,34 @@
 
 @media screen and (max-width: 600px) {
   #contact,
+  #experience-history,
+  #education,
+  #cta,
+  #bim-viewer,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
-    height: 83vh;
+    min-height: 83vh;
     margin-bottom: 0;
+    padding: 2rem 1rem;
+  }
+  .hero-content {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .stats-container {
+    gap: 1rem;
+  }
+  .stat-item {
+    min-width: 100px;
+    padding: 1rem;
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+  .hero-tagline {
+    font-size: 1rem;
   }
   article {
     font-size: 1rem;
@@ -99,5 +141,36 @@
   }
   .text-container {
     text-align: justify;
+  }
+  section {
+    margin: 2rem 1rem;
+    padding: 2rem;
+  }
+  .companies-section {
+    margin: 2rem 1rem;
+    padding: 2rem;
+  }
+  #cta {
+    padding: 2rem 1rem;
+  }
+  .cta-text {
+    font-size: 1rem;
+  }
+  .job-responsibilities li,
+  .certification-list li,
+  .additional-info li {
+    font-size: 0.85rem;
+  }
+  .job-title {
+    font-size: 1rem;
+  }
+  .project-name {
+    font-size: 0.85rem;
+  }
+  .companies-section h2 {
+    font-size: 1.5rem;
+  }
+  .company-logo img {
+    height: 40px;
   }
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Muhammed Navas | Senior Document Controller & Aconex Specialist</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -16,8 +16,10 @@
     <div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#experience-history">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#bim-viewer">3D Viewer</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -32,40 +34,58 @@
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience-history" onclick="toggleMenu()">Experience</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#bim-viewer" onclick="toggleMenu()">3D Viewer</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>
   <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Muhammed Navas profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Muhammed Navas</h1>
-      <p> and i'm a</p>
-      <p class="section__text__p2"><!--Document Controller--></p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="https://www.linkedin.com/in/navas1/" target="_blank">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" /></a>
-        <a href="https://github.com/mnavasp786" target="_blank">
-          <img src="./assets/github.png" alt="My Github profile" class="icon" /></a>
-        <a href="https://www.youtube.com/@mixopedia" target="_blank">
-          <img src="./assets/youtube.png" alt="My Youtube channel" class="icon" /></a>
-        <a href="https://wa.me/971585151023?text=Hello%2C%20I%27d%20like%20to%20chat%20with%20you." target="_blank">
-          <img src="./assets/whatsapp.png" alt="Contact-me" class="icon" /></a>
-        <a href='tel:+971585151023' target="_blank">
-          <img src="./assets/phone.png" alt="Contact-me" class="icon" /></a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.png" alt="Muhammed Navas profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Muhammed Navas Pilathottathil</h1>
+          <p class="section__text__p2">Senior Document Controller & Aconex Specialist</p>
+          <p class="hero-tagline">Oracle Aconex Accredited Professional | 10+ Years Experience</p>
+          
+          <div class="stats-container">
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projects Delivered</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">26+</div>
+              <div class="stat-label">Top Clients</div>
+            </div>
+          </div>
+          
+          <div class="btn-container">
+            <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">
+              Download CV
+            </button>
+            <button class="btn btn-color-2" onclick="location.href='./#contact'">
+              Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/navas1/" target="_blank">
+              <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" /></a>
+            <a href="https://wa.me/971585151023?text=Hello%2C%20I%27d%20like%20to%20chat%20with%20you." target="_blank">
+              <img src="./assets/whatsapp.png" alt="Contact-me" class="icon" /></a>
+            <a href='tel:+971585151023' target="_blank">
+              <img src="./assets/phone.png" alt="Contact-me" class="icon" /></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -82,16 +102,6 @@
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
             <p>10+ years</p>
-            <!--Animating previous experiences new script comes here
-            <div class="rotating-text">
-
-              <p>
-                <span class="word w-1">Document_Control</span>
-                <span class="word w-2">Administration</span>
-                <span class="word w-3">IT_Support</span>
-              </p>
-            </div> -->
-
             <div class="education-list">
               <p>Document Control</p>
               <p>IT Support</p>
@@ -99,34 +109,26 @@
             </div>
           </div>
           <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education & Certification</h3>
-
-
+            <img src="./assets/education.png" alt="Location icon" class="icon" />
+            <h3>Based In</h3>
+            <p>Dubai, UAE</p>
             <div class="education-list">
-              <p>Oracle Aconex</p>
-              <p>Google IT Support Professional</p>
-              <p>Cisco CCNA</p>
-              <p>Microsoft Power BI Data Visualization</p>
-              <p>Graphic Designing</p>
+              <p>5+ Years in UAE</p>
+              <p>Construction Projects</p>
+              <p>Prestigious Clients</p>
             </div>
-
-
           </div>
-
         </div>
         <div class="text-container">
           <p>
-            I am a Senior Document Controller and Administrative Professional with over 10 years of experience managing
-            project documentation, office operations, and administrative workflows for Civil, MEP, Infrastructure, and
-            HSE projects, including 5 years in the UAE.
-
-            I specialize in Oracle Aconex and EDMS platforms, handling submissions, approvals, revision control,
-            metadata management, and project handovers, ensuring all documents are accurate, traceable, and compliant.
-
-            I also streamline processes with MS Office, Power BI, SharePoint, and PDF tools, develop SOPs and trackers,
-            and train teams to work efficiently. I enjoy using technology to keep projects organized, on track, and
-            running smoothly.
+            Detail-oriented Senior Document Controller and Oracle Aconex Accredited Specialist bringing 10+ years of 
+            administrative, operational, and document management experience across the construction, healthcare, and data 
+            operations sectors. With 5 years of focused expertise in UAE construction projects, I have successfully supported 
+            multi-disciplinary works for prestigious developments under top-tier clients and consultants including Meydan, 
+            Nakheel, AECOM, Mace, and Jacobs. Skilled in EDMS administration, QA/QC compliance, workflow optimization, 
+            and team training, I consistently deliver structured, audit-ready document control systems that support seamless 
+            project execution from initiation through handover.
+          </p>
         </div>
       </div>
     </div>
@@ -134,7 +136,7 @@
   </section>
   <section id="experience">
     <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
+    <h1 class="title">Core Competencies</h1>
     <!-- <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
@@ -224,76 +226,63 @@
 
         <!-- Technical Skills -->
         <div class="details-container">
-          <h2 class="experience-sub-title">Technical Skills</h2>
+          <h2 class="experience-sub-title">Technical Tools & Software</h2>
           <div class="article-container">
             <article>
               <img src="./assets/oracle-aconex.png" alt="Oracle Aconex" class="icon tool-icon" />
+              <p>Oracle Aconex</p>
             </article>
             <article>
               <img src="./assets/dome_connect.png" alt="DOME Connect" class="icon" />
+              <p>DOME Connect</p>
             </article>
             <article>
               <img src="./assets/ms-office.png" alt="MS Office" class="icon tool-icon" />
+              <p>MS Office Suite</p>
             </article>
             <article>
               <img src="./assets/excel.png" alt="Microsoft Excel" class="icon" />
+              <p>Excel</p>
             </article>
             <article>
               <img src="./assets/power-bi.png" alt="Microsoft Power BI" class="icon tool-icon" />
-            </article>
-            <article>
-              <img src="./assets/powerpoint.png" alt="Microsoft PowerPoint" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/outlook.png" alt="Microsoft outlook Mail & Calender" class="icon" />
+              <p>Power BI</p>
             </article>
             <article>
               <img src="./assets/sharepoint.png" alt="SharePoint & Teams" class="icon" />
+              <p>SharePoint</p>
             </article>
             <article>
               <img src="./assets/teams.png" alt="Microsoft Teams Meetings" class="icon" />
+              <p>Teams</p>
+            </article>
+            <article>
+              <img src="./assets/adobe.png" alt="Adobe Acrobat" class="icon" />
+              <p>Adobe Acrobat</p>
+            </article>
+            <article>
+              <img src="./assets/photosho.png" alt="Adobe Photoshop" class="icon" />
+              <p>Photoshop</p>
+            </article>
+            <article>
+              <img src="./assets/coreldraw.png" alt="CorelDraw" class="icon" />
+              <p>CorelDraw</p>
             </article>
             <article>
               <img src="./assets/revit.png" alt="Revit" class="icon" />
+              <p>Revit</p>
             </article>
             <article>
               <img src="./assets/autocad.png" alt="Autodesk AutoCAD" class="icon" />
+              <p>AutoCAD</p>
             </article>
-            
-            <article>
-              <img src="./assets/photosho.png" alt="Adobe Photoshop" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/coreldraw.png" alt="Adobe Photoshop" class="icon" />
-            </article>
-          
-            <article>
-              <img src="./assets/adobe.png" alt="Adobe Acrobat" class="icon" />
-            </article>
-            
             <article>
               <img src="./assets/windows.png" alt="Microsoft Windows PC" class="icon" />
+              <p>Windows</p>
             </article>
             <article>
-              <img src="./assets/linux.png" alt="linux" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/ubuntu.png" alt="ubuntu" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/html.png" alt="ubuntu" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/css.svg" alt="ubuntu" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/javascript.png" alt="ubuntu" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/python.png" alt="ubuntu" class="icon" />
-            </article>
-            <article>
-              <img src="./assets/sql.png" alt="ubuntu" class="icon" />
+              <img src="./assets/linux.png" alt="Linux" class="icon" />
+              <p>Linux</p>
             </article>
           </div>
         </div>
@@ -301,12 +290,24 @@
 
         <!-- Professional / Document Control Skills -->
         <div class="details-container">
-          <h2 class="experience-sub-title">Professional Skills</h2>
+          <h2 class="experience-sub-title">Document Control Expertise</h2>
           <div class="article-container">
             <article>
               <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
               <div>
-                <h3>Transmittals & Workflows</h3>
+                <h3>EDMS/DMS Administration</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Document Lifecycle Management</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <div>
+                <h3>Transmittals & Submittals</h3>
               </div>
             </article>
             <article>
@@ -330,31 +331,13 @@
             <article>
               <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
               <div>
-                <h3>Document Numbering & Filing Systems</h3>
+                <h3>Document Numbering Systems</h3>
               </div>
             </article>
             <article>
               <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
               <div>
-                <h3>Correspondence & Letters</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Procurement & Technical Documentation</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Consultant / PMC Coordination</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Handover & Project Close-Out</h3>
+                <h3>Workflow Optimization</h3>
               </div>
             </article>
             <article>
@@ -369,37 +352,60 @@
                 <h3>SOPs & Templates</h3>
               </div>
             </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Tracking & Reporting</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Inspection Requests, NCRs, SORs Management</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Database Management / DBMS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Windows & Linux</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
-              <div>
-                <h3>Typing Speed: 50+ WPM</h3>
-              </div>
-            </article>
           </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience-history'" />
+  </section>
+  <section id="experience-history">
+    <p class="section__text__p1">My Professional</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">FIBREX CONSTRUCTION GROUP, Dubai, UAE</h2>
+          <p class="job-title">Project Document Controller | Apr 2025 – Present</p>
+          <p class="project-name">Key Project: District One West – Villas, Enabling Works, Building, Infrastructure, Landscaping (Client: Meydan/Dubai Holding/Nakheel; Consultants: WSA, AECOM, T&T, Hill International)</p>
+          <ul class="job-responsibilities">
+            <li>Managed end-to-end document control for multi-disciplinary projects (Civil, MEP, Infrastructure, Landscaping, Commercial)</li>
+            <li>Administered Oracle Aconex for workflows, transmittals, submittals, revision control, approvals</li>
+            <li>Handled Shop Drawings, Material Submittals, Method Statements, RFIs, Test Reports, As-Built Drawings, O&M Manuals</li>
+            <li>Developed SOPs, standard forms, templates, and MEP clearance trackers to improve efficiency</li>
+            <li>Led Training & Onboarding initiatives for Document Controllers and Secretaries</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">INTERNATIONAL FOUNDATION GROUP (IFG) LLC, Dubai, UAE</h2>
+          <p class="job-title">Document Controller | Apr 2023 – Apr 2025</p>
+          <p class="project-name">Projects: Central Park at City Walk, Expo City Dubai, Palm Jumeirah (Orla Infinity & Alba Residences), Azizi Sheikh Zayed Tower</p>
+          <ul class="job-responsibilities">
+            <li>Administered Aconex submissions from initiation to project handover</li>
+            <li>Managed project documents, submittals, contractor communications, inspection requests, QA/QC documentation</li>
+            <li>Implemented standardized templates, SOPs, and tracking logs for document submissions</li>
+            <li>Managed project costing and QS-related activities including concrete, steel, and excavation trackers</li>
+            <li>Trained junior document controllers and prepared progress reports</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">UNILABS MIDDLE EAST, Abu Dhabi, UAE</h2>
+          <p class="job-title">Team Leader (Operations & Data Control) | Mar 2021 – Nov 2022</p>
+          <ul class="job-responsibilities">
+            <li>Led multi-site data control operations, ensuring high accuracy in records processing and reporting</li>
+            <li>Supervised and mentored team members to enhance efficiency and compliance</li>
+            <li>Developed and implemented SOPs for data entry, verification, and backups</li>
+            <li>Managed data retrieval, database maintenance, and electronic filing systems</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">PERUMANNA MEDICAL CENTRE, Kozhikode, India</h2>
+          <p class="job-title">Clinic Administrator & Pharmacy Manager | Mar 2015 – Oct 2020</p>
+          <ul class="job-responsibilities">
+            <li>Managed daily clinic operations, overseeing patient records, appointments, and pharmacy inventory</li>
+            <li>Implemented a document management system (DMS) for accurate and auditable records</li>
+            <li>Supervised and trained staff, coordinated schedules, and ensured compliance with clinic protocols</li>
+            <li>Maintained inventory controls, procurement records, and supported IT operations</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -407,34 +413,18 @@
   </section>
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
+    <h1 class="title">Featured Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
             <img src="./assets/cw1.png" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Enabling Works for CityWalk Central Park</h2>
+          <h2 class="experience-sub-title project-title">CityWalk Central Park</h2>
+          <p class="project-description">Enabling Works for prestigious Dubai development</p>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
-              Linkedin
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
-              Hire Me
-            </button>
-
-          </div>
-          <h2></h2> -
-          <div class="btn-container">
-            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
-              WhatsApp Me
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
-              Call Me
+            <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Discuss This Project
             </button>
           </div>
         </div>
@@ -442,118 +432,146 @@
           <div class="article-container">
             <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Enabling Works for Expo City Dubai</h2>
+          <h2 class="experience-sub-title project-title">Expo City Dubai</h2>
+          <p class="project-description">Mangrove Residences & Sky Residences enabling works</p>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
-              Linkedin
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
-              Hire Me
-            </button>
-
-          </div>
-          <h2></h2> -
-          <div class="btn-container">
-
-            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
-              WhatsApp Me
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
-              Call Me
+            <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Discuss This Project
             </button>
           </div>
-
         </div>
         <div class="details-container color-container">
           <div class="article-container">
             <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">District One West - Villas & Infrastructure</h2>
+          <h2 class="experience-sub-title project-title">District One West</h2>
+          <p class="project-description">Villas, Infrastructure & Landscaping at MBR City</p>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
-              Linkedin
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
-              Hire Me
-            </button>
-
-          </div>
-          <h2></h2> -
-          <div class="btn-container">
-
-            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
-              WhatsApp Me
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
-              Call Me
+            <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Discuss This Project
             </button>
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/orla.jpg" alt="Project 3" class="project-img" />
+            <img src="./assets/orla.jpg" alt="Project 4" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Enabling for Orla Infinity at Palm Jumeirah</h2>
+          <h2 class="experience-sub-title project-title">Orla Infinity</h2>
+          <p class="project-description">Luxury residences at Palm Jumeirah</p>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
-              Linkedin
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
-              Hire Me
-            </button>
-
-          </div>
-          <h2></h2> -
-          <div class="btn-container">
-
-            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
-              WhatsApp Me
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
-              Call Me
+            <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Discuss This Project
             </button>
           </div>
         </div>
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/alba.jpg" alt="Project 3" class="project-img" />
+            <img src="./assets/alba.jpg" alt="Project 5" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Tha Alba Residences at Palm Jumeirah</h2>
+          <h2 class="experience-sub-title project-title">Alba Residences</h2>
+          <p class="project-description">Premium development at Palm Jumeirah</p>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://www.linkedin.com/in/navas1', '_blank');">
-              Linkedin
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-              Download CV
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
-              Hire Me
-            </button>
-
-          </div>
-          <h2></h2> -
-          <div class="btn-container">
-
-            <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
-              WhatsApp Me
-            </button>
-            <button class="btn btn-color-2" onclick="window.open('tel:+971585151023', '_blank')">
-              Call Me
+            <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+              Discuss This Project
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#bim-viewer'" />
+  </section>
+  <section id="bim-viewer">
+    <p class="section__text__p1">Interactive</p>
+    <h1 class="title">3D BIM Model Viewer</h1>
+    <p class="viewer-description">Explore my Revit projects with this interactive 3D viewer. Zoom, rotate, and examine the models in detail.</p>
+    
+    <div class="viewer-container">
+      <div class="viewer-placeholder">
+        <div class="placeholder-content">
+          <img src="./assets/revit.png" alt="Revit" class="placeholder-icon" />
+          <h3>3D BIM Model Viewer</h3>
+          <p>Interactive 3D Model Showcase</p>
+          <p class="placeholder-note">Coming Soon - Revit models will be displayed here</p>
+          <div class="viewer-controls-info">
+            <p><strong>Future Capabilities:</strong></p>
+            <ul>
+              <li>🖱️ Interactive 3D Model Navigation</li>
+              <li>🏗️ Revit Architecture, Structure & MEP Models</li>
+              <li>🔍 Zoom, Rotate & Pan Controls</li>
+              <li>📱 Mobile-Friendly 3D Viewing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="viewer-features">
+      <div class="feature-item">
+        <img src="./assets/revit.png" alt="Revit" class="feature-icon" />
+        <h3>Revit Models</h3>
+        <p>Architecture, Structure & MEP</p>
+      </div>
+      <div class="feature-item">
+        <img src="./assets/autocad.png" alt="AutoCAD" class="feature-icon" />
+        <h3>BIM Coordination</h3>
+        <p>Clash Detection & 4D Simulation</p>
+      </div>
+      <div class="feature-item">
+        <img src="./assets/checkmark.png" alt="Quality" class="feature-icon" />
+        <h3>Quality Control</h3>
+        <p>Model Verification & Standards</p>
+      </div>
+    </div>
+    
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#cta'" />
+  </section>
+  <section id="cta">
+    <div class="cta-container">
+      <h1 class="title">Ready to Work Together?</h1>
+      <p class="cta-text">I'm currently available for senior document controller positions. Let's discuss how my expertise in Oracle Aconex and document management can benefit your projects.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('mailto:mnavas313@gmail.com', '_blank')">
+          Email Me Now
+        </button>
+        <button class="btn btn-color-2" onclick="window.open('https://wa.me/971585151023', '_blank')">
+          WhatsApp Me
+        </button>
+      </div>
+      <div class="cta-quick-contact">
+        <p><strong>Quick Contact:</strong> +971585151023 | mnavas313@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <section id="education">
+    <p class="section__text__p1">My</p>
+    <h1 class="title">Education & Certifications</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Education</h2>
+          <div class="education-item">
+            <h3>Higher Secondary Education (Science)</h3>
+            <p>GHSS Kuttikkattoor, Kerala, India</p>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Professional Certifications</h2>
+          <ul class="certification-list">
+            <li>Oracle Aconex Accredited Professional & Specialist Badges (Oracle University)</li>
+            <li>Google IT Support Professional Certificate</li>
+            <li>Cisco CCNA 200-301 Course (Networking & Cyber Security)</li>
+            <li>Microsoft Power BI Data Visualization</li>
+            <li>Certificate in Graphic Designing (Photoshop/Illustrator/CorelDraw)</li>
+          </ul>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Additional Information</h2>
+          <ul class="additional-info">
+            <li><strong>Driving Licenses:</strong> Valid UAE Light Vehicle and India Light Vehicle</li>
+            <li><strong>Languages:</strong> English, Hindi/Urdu, Malayalam (Native), Arabic (Basic Understanding)</li>
+            <li><strong>Typing Speed:</strong> 50+ WPM</li>
+            <li><strong>BIM Learning:</strong> <a href="https://autode.sk/4gj8lMW" target="_blank">autode.sk/4gj8lMW</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -587,96 +605,45 @@
   </section>
   <!-- Companies i worked with -->
   <!-- Companies I’ve Worked With -->
-  <section class="companies-section" style="padding:40px 0; text-align:center; background-color:#f9f9f9;">
-    <h2 style="margin-bottom:30px; font-size:1.8rem;">Key Project Stakeholders & Partners</h2>
-    <div class="companies-container"
-      style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:30px;">
+  <section class="companies-section">
+    <h2>Trusted by Industry Leaders</h2>
+    <div class="companies-container">
       <div class="company-logo">  
-        <img src="./assets/dhre.png" alt="Dubai_Holding_Real_Estate" style="height:60px;">
+        <img src="./assets/meydan.png" alt="Meydan" />
       </div>
       <div class="company-logo">
-        <img src="./assets/expo.png" alt="Expo_City_Dubai" style="height:60px;">
+        <img src="./assets/nakheel.png" alt="Nakheel" />
       </div>
       <div class="company-logo">
-        <img src="./assets/omniyat.png" alt="Omniyat" style="height:60px;">
+        <img src="./assets/aecom.png" alt="AECOM" />
       </div>
       <div class="company-logo">
-        <img src="./assets/meydan.png" alt="Meydan" style="height:60px;">
+        <img src="./assets/jacobs.png" alt="Jacobs" />
       </div>
       <div class="company-logo">
-        <img src="./assets/deyaar.png" alt="Deyaar_Developments" style="height:60px;">
+        <img src="./assets/mace.png" alt="Mace" />
       </div>
       <div class="company-logo">
-        <img src="./assets/aecom.png" alt="AECOM" style="height:60px;">
+        <img src="./assets/hill.png" alt="Hill International" />
       </div>
       <div class="company-logo">
-        <img src="./assets/hill.png" alt="Hill_International" style="height:60px;">
+        <img src="./assets/dhre.png" alt="Dubai Holding Real Estate" />
       </div>
       <div class="company-logo">
-        <img src="./assets/ae7.png" alt="AE7" style="height:60px;">
+        <img src="./assets/expo.png" alt="Expo City Dubai" />
       </div>
       <div class="company-logo">
-        <img src="./assets/jacobs.png" alt="Jacobs" style="height:60px;">
+        <img src="./assets/omniyat.png" alt="Omniyat" />
       </div>
       <div class="company-logo">
-        <img src="./assets/mace.png" alt="Mace" style="height:60px;">
+        <img src="./assets/deyaar.png" alt="Deyaar Developments" />
       </div>
       <div class="company-logo">
-        <img src="./assets/revolution.png" alt="REvolution" style="height:60px;">
+        <img src="./assets/ae7.png" alt="AE7" />
       </div>
       <div class="company-logo">
-        <img src="./assets/gardinia.png" alt="Gardinia" style="height:60px;">
+        <img src="./assets/dm.webp" alt="Dubai Municipality" />
       </div>
-      <div class="company-logo">
-        <img src="./assets/whitespace.png" alt="WhiteSpaceArchitects" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/zutari.png" alt="ZUTARI" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/jouzy.png" alt="JOUZY" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/nakheel.png" alt="Nakheel" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/meraas.png" alt="Nakheel" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/unilabs.png" alt="Unilabs" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/dm.webp" alt="Dubai_Municipality" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/dewan.png" alt="Dewar_Architects" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/arifbin.gif" alt="Arif&Bintoak" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/pt.gif" alt="P&T_Group" style="height:60px;">
-      </div>
-
-      <div class="company-logo">
-        <img src="./assets/egos.png" alt="Egis" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/edcg.png" alt="EDCG" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/bsbg.jpg" alt="BSBG" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/tnt.png" alt="Omnium" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/omnium.png" alt="Omnium" style="height:60px;">
-      </div>
-      <div class="company-logo">
-        <img src="./assets/dgj.jpg" alt="DG_Johns" style="height:60px;">
-      </div>
-      <!-- Add more logos as needed -->
     </div>
   </section>
   <!-- End of Companies i worked with -->
@@ -686,13 +653,15 @@
       <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#experience-history">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#bim-viewer">3D Viewer</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <p>Copyright &#169; 2023 Muhammed Navas. All Rights Reserved.</p>
+    <p>Copyright &#169; 2026 Muhammed Navas. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
 
